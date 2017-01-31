@@ -75,18 +75,18 @@ type SimulationOptions
     function SimulationOptions()
         # optimal policy used for coordination table
         coordination_table_one_policy = true ## currently this is whether or not solve real time...
-        coordination_policy_filepath = "../../data/qvalue_tables/052916opt.jld"
+        coordination_policy_filepath = "../../data/qvalue_tables/optimal.jld"
 
         # ownship options
-        ownship_policy_filepath = "../../data/qvalue_tables/052916opt.jld"
+        ownship_policy_filepath = "../../data/qvalue_tables/optimal.jld"
         is_ownship_policy_joint = true # {false = non-joint, true = joint}
 
         policy_name = "solQ"
-        ownship_strategy = greedy_strategy # {greedy_strategy, coordinated_strategy}
+        ownship_strategy = coordinated_strategy # {greedy_strategy, coordinated_strategy}
         ownship_action_selection = "average" # {best, worst, average}
  
         # intruder options
-        intruder_policy_filepath = "../../data/qvalue_tables/052916opt.jld"
+        intruder_policy_filepath = "../../data/qvalue_tables/optimal.jld"
         is_intruder_policy_joint = true # {false = non-joint, true = joint}
 
         intruder_strategy = coordinated_strategy

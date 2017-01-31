@@ -101,6 +101,6 @@ function update!(encounter::Encounter, state::State, min_horizontal_dist::Float6
     push!(encounter.min_horizontal_dists, min_horizontal_dist)
 end
 
-function save(encounters::Vector{Encounter}, output_filepath::AbstractString)
+function save(encounters::Vector{Encounter}, output_filepath::String)
     JLD.save(output_filepath, "encounters", encounters)
 end

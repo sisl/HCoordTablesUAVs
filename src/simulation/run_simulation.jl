@@ -79,7 +79,7 @@ function run_simulation()
     environment = build_environment()
 
     # simulate the encounters
-    num_encounters = 10
+    num_encounters = 1000
     encounters = simulate_encounters(environment, num_encounters)
     # TODO add encounter saving filepath
 
@@ -87,8 +87,8 @@ function run_simulation()
     # analyze the encounters
     analyze(encounters)
 
-    filepath = "../../data/encounters/set1.jld"
-    save(encounters, filepath)
+    #filepath = "../../data/encounters/set1.jld"
+    #save(encounters, filepath)
 end
 
 # run it
