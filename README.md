@@ -1,1 +1,1 @@
-The generated policies will be saved to this directory.
+Code base to support the paper, Horizontal Maneuver Coordination for Aircraft Collision-Avoidance Systems.
